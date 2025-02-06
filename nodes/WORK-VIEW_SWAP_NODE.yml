@@ -1,6 +1,6 @@
 fileVersion: 1
-id: c91741d2-a522-414d-9b13-d5794eef0be9
-name: STG_REGION
+id: 25ee0340-431d-4e27-804f-381924cc66b6
+name: VIEW_SWAP_NODE
 operation:
   config:
     insertStrategy: INSERT
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d0ee2b84-8b46-4fad-a167-27630ed9de1e
-          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+          columnCounter: 30380f41-420e-4c11-9e4f-b0015986ab8f
+          stepCounter: 25ee0340-431d-4e27-804f-381924cc66b6
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -28,13 +28,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 890ce3e3-fe7a-43c7-92e5-30c3bf8d473e
-                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+              - columnCounter: d0ee2b84-8b46-4fad-a167-27630ed9de1e
+                stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ec97b418-58ed-411f-8a43-b8a6ab2668ec
-          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+          columnCounter: 4cb303d8-0385-46f9-a062-3bfa54d2efdf
+          stepCounter: 25ee0340-431d-4e27-804f-381924cc66b6
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -42,13 +42,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 1d73640b-c404-4e8d-9262-5bfc19c6eab2
-                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+              - columnCounter: ec97b418-58ed-411f-8a43-b8a6ab2668ec
+                stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 735cee74-5239-4274-901d-03c85cd5e1a7
-          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+          columnCounter: acac43d2-c7bc-4f9a-b754-fb26ab54a9bd
+          stepCounter: 25ee0340-431d-4e27-804f-381924cc66b6
         config: {}
         dataType: VARCHAR(152)
         description: ""
@@ -56,13 +56,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 42152870-1645-4177-9a26-1b987f9af66c
-                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+              - columnCounter: 735cee74-5239-4274-901d-03c85cd5e1a7
+                stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c08d1ab6-3618-44e8-86b1-8f1cb9da3635
-          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+          columnCounter: 5fad4d17-ab81-4dc6-9512-338189a85df2
+          stepCounter: 25ee0340-431d-4e27-804f-381924cc66b6
         config: {}
         dataType: TIMESTAMP_LTZ(9)
         description: ""
@@ -70,8 +70,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 70e34f33-2ed9-4fa5-b377-abfd9bb7fc03
-                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+              - columnCounter: c08d1ab6-3618-44e8-86b1-8f1cb9da3635
+                stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
@@ -80,13 +80,13 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: SRC
-            nodeName: REGION
+          - locationName: WORK
+            nodeName: NODE_A
         join:
-          joinCondition: FROM {{ ref('SRC', 'REGION') }} "REGION"
-        name: STG_REGION
+          joinCondition: FROM {{ ref('WORK', 'NODE_A') }} "NODE_A"
+        name: VIEW_SWAP_NODE
         noLinkRefs: []
-  name: STG_REGION
+  name: VIEW_SWAP_NODE
   overrideSQL: false
   schema: ""
   sqlType: Stage

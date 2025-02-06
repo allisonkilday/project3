@@ -1,0 +1,95 @@
+fileVersion: 1
+id: c91741d2-a522-414d-9b13-d5794eef0be9
+name: NODE_A
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0ee2b84-8b46-4fad-a167-27630ed9de1e
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: R_REGIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 890ce3e3-fe7a-43c7-92e5-30c3bf8d473e
+                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec97b418-58ed-411f-8a43-b8a6ab2668ec
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: R_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1d73640b-c404-4e8d-9262-5bfc19c6eab2
+                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 735cee74-5239-4274-901d-03c85cd5e1a7
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+        config: {}
+        dataType: VARCHAR(152)
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42152870-1645-4177-9a26-1b987f9af66c
+                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c08d1ab6-3618-44e8-86b1-8f1cb9da3635
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
+        config: {}
+        dataType: TIMESTAMP_LTZ(9)
+        description: ""
+        name: LOADTIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 70e34f33-2ed9-4fa5-b377-abfd9bb7fc03
+                stepCounter: b5a8ef0e-2198-4541-b426-0fb318eab1ac
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: REGION
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }} "REGION"
+        name: NODE_A
+        noLinkRefs: []
+  name: NODE_A
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
