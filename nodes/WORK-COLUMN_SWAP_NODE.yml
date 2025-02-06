@@ -1,5 +1,5 @@
 fileVersion: 1
-id: ece0e19b-771b-44ff-8736-3f1494ade868
+id: 1f72e41b-5371-45d3-84f0-a2d01101652a
 name: COLUMN_SWAP_NODE
 operation:
   config:
@@ -19,120 +19,50 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: b664f99a-9691-4ab5-89bf-d0ffd5e1fcda
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
+          columnCounter: a12f31c4-0fdf-4a27-b99d-100e2113c048
+          stepCounter: 1f72e41b-5371-45d3-84f0-a2d01101652a
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: C_CUSTKEY
+        name: R_REGIONKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 5e60e003-b5f7-417d-bf1e-0eff4cd23618
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
+              - columnCounter: 779ffeab-fb48-4564-906d-494c0acafb66
+                stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7e920312-75f3-4732-9579-ed8096537f8b
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
+          columnCounter: a6d2f87a-03d9-4227-a9b8-edda2bb6ac25
+          stepCounter: 1f72e41b-5371-45d3-84f0-a2d01101652a
         config: {}
         dataType: VARCHAR(25)
         description: ""
-        name: C_NAME
+        name: R_NAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 4c58f2fc-6c90-473d-acfb-b9dc708291b4
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
+              - columnCounter: 701b88d2-22ff-4361-b7de-202631508f3f
+                stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 954d4ce5-0211-4e38-9aec-1d8f362aabc4
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
+          columnCounter: 5ee0e09c-acc4-4072-bb47-cd446cfd97fc
+          stepCounter: 1f72e41b-5371-45d3-84f0-a2d01101652a
         config: {}
-        dataType: VARCHAR(40)
+        dataType: VARCHAR(152)
         description: ""
-        name: C_ADDRESS
+        name: R_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 9bd627d6-6de8-479a-a7f8-8da0c2e8ce3b
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
+              - columnCounter: dcd467bc-0b0f-41d1-9aba-46cd17e0f6c2
+                stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0df7e02a-fc3c-4f9b-bb4b-0a1b8a5e6921
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: C_NATIONKEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: f2c5ce2c-ddc8-45f2-80fd-5aa815f49734
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 2dc96b03-baf0-4ff7-9567-7ac34d114fe8
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
-        config: {}
-        dataType: VARCHAR(15)
-        description: ""
-        name: C_PHONE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 019e842e-7407-4a3b-a532-94e44e11d356
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 61b10852-32c9-457f-8b45-5ffe82c0535e
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
-        config: {}
-        dataType: NUMBER(12,2)
-        description: ""
-        name: C_ACCTBAL
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 9e86cb6c-b73e-4e9e-8f36-293e9fded47e
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 09513e82-b620-4610-90a6-ce5c6a07652b
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
-        config: {}
-        dataType: VARCHAR(10)
-        description: ""
-        name: C_MKTSEGMENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 40d3ddf4-cd9d-4ffc-8cd8-fcc72437f6c5
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 782a11ad-91bf-4237-a060-a2f19dffeb45
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
-        config: {}
-        dataType: VARCHAR(117)
-        description: ""
-        name: C_COMMENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: cd834ab1-0a83-4c39-9ad8-54ba641df582
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: e49e487f-417c-4502-bfa1-015b90561d12
-          stepCounter: ece0e19b-771b-44ff-8736-3f1494ade868
+          columnCounter: 4c74b568-1ad5-49a1-97c7-910d543ab3e7
+          stepCounter: 1f72e41b-5371-45d3-84f0-a2d01101652a
         config: {}
         dataType: TIMESTAMP_LTZ(9)
         description: ""
@@ -140,8 +70,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: b6acd111-7595-4287-b517-4f10208af7d3
-                stepCounter: 5dfe3d70-08dc-4b22-ad8b-9c1ebe50f49f
+              - columnCounter: c7a952d8-6b8c-4ab6-b4c2-f20ee4fa44d0
+                stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
@@ -151,9 +81,9 @@ operation:
           customSQL: ""
         dependencies:
           - locationName: WORK
-            nodeName: NODE_A
+            nodeName: NODE_B
         join:
-          joinCondition: FROM {{ ref('WORK', 'NODE_A') }} "NODE_A"
+          joinCondition: FROM {{ ref('WORK', 'NODE_B') }} "NODE_B"
         name: COLUMN_SWAP_NODE
         noLinkRefs: []
   name: COLUMN_SWAP_NODE
