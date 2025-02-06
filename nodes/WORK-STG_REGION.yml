@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 88cd9f89-19a3-4c0e-9633-afbbeea42319
-name: NODE_B
+id: c91741d2-a522-414d-9b13-d5794eef0be9
+name: STG_REGION
 operation:
   config:
     insertStrategy: INSERT
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 779ffeab-fb48-4564-906d-494c0acafb66
-          stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
+          columnCounter: d0ee2b84-8b46-4fad-a167-27630ed9de1e
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -33,8 +33,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 701b88d2-22ff-4361-b7de-202631508f3f
-          stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
+          columnCounter: ec97b418-58ed-411f-8a43-b8a6ab2668ec
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -47,8 +47,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: dcd467bc-0b0f-41d1-9aba-46cd17e0f6c2
-          stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
+          columnCounter: 735cee74-5239-4274-901d-03c85cd5e1a7
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
         config: {}
         dataType: VARCHAR(152)
         description: ""
@@ -61,8 +61,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c7a952d8-6b8c-4ab6-b4c2-f20ee4fa44d0
-          stepCounter: 88cd9f89-19a3-4c0e-9633-afbbeea42319
+          columnCounter: c08d1ab6-3618-44e8-86b1-8f1cb9da3635
+          stepCounter: c91741d2-a522-414d-9b13-d5794eef0be9
         config: {}
         dataType: TIMESTAMP_LTZ(9)
         description: ""
@@ -84,9 +84,9 @@ operation:
             nodeName: REGION
         join:
           joinCondition: FROM {{ ref('SRC', 'REGION') }} "REGION"
-        name: NODE_B
+        name: STG_REGION
         noLinkRefs: []
-  name: NODE_B
+  name: STG_REGION
   overrideSQL: false
   schema: ""
   sqlType: Stage
