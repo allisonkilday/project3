@@ -25,7 +25,7 @@ operation:
     warehouseName: COMPUT_WH
   database: ""
   deployEnabled: true
-  description: ""
+  description: Desc
   isMultisource: false
   locationName: WORK
   materializationType: dynamic table
