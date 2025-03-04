@@ -6,6 +6,6 @@ mappingDefinitions:
     schema: SOURCE
   WORK:
     database: ALLISON_DB2
-    schema: PROD_WORK
+    schema: WORK
 name: Prod
 type: Environment
