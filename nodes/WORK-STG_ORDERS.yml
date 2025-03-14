@@ -7,7 +7,7 @@ operation:
     postSQL: ""
     preSQL: |-
       {{ stage('Set Warehouse') }}
-      USE WAREHOUSE INVALID_WAREHOUSE
+      USE WAREHOUSE COMPUTE_WH
     testsEnabled: true
     truncateBefore: true
   database: ""
