@@ -5,7 +5,9 @@ operation:
   config:
     insertStrategy: INSERT
     postSQL: ""
-    preSQL: USE WAREHOUSE COMPUTE_WH
+    preSQL: |-
+      {{ stage('Set Warehouse') }}
+      USE WAREHOUSE COMPUTE_WH
     testsEnabled: true
     truncateBefore: true
   database: ""
