@@ -1,0 +1,22 @@
+config:
+  entities:
+    nodeTypes:
+      "230":
+        defaultStorageLocation: null
+        isDisabled: false
+      "278":
+        defaultStorageLocation: null
+        isDisabled: false
+      "281":
+        defaultStorageLocation: null
+        isDisabled: false
+      "394":
+        defaultStorageLocation: null
+        isDisabled: false
+  packageVariables: ""
+fileVersion: 1
+id: "@coalesce/incremental-loading"
+name: IncrementalLoading
+packageID: "@coalesce/incremental-loading"
+releaseID: 09aa7001-758c-4c14-811b-63c0917e325b
+type: Package
